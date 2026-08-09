@@ -4,13 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Curious Correspondence Society — Start Your Own</title>
-<meta name="description" content="A field guide and printable starter kit for starting a playful mail tradition with a young mind you love. Stories, questions, small missions, and mailed curiosities.">
-<meta property="og:title" content="The Curious Correspondence Society — Start Your Own">
-<meta property="og:description" content="A field guide and printable starter kit for starting a playful mail tradition with a young mind you love.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://caldwellcourtneyc.github.io/curious-correspondence-society/assets/CCS-seal.png">
-<link rel="icon" type="image/png" href="assets/CCS-seal.png">
-<link href="fonts/fonts.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,400..700;1,8..30,400..600&family=Rosario:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
 <style>
   :root{
     --parchment:#f3e9cf;
@@ -31,7 +27,7 @@
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{
-    font-family:'Alegreya Sans',system-ui,sans-serif;
+    font-family:'Rosario',system-ui,sans-serif;
     color:var(--ink-body);
     background:var(--parchment);
     background-image:
@@ -42,13 +38,13 @@
     line-height:1.62;
     letter-spacing:.005em;
   }
-  h1,h2,h3,.display{font-family:'Newsreader',serif;font-optical-sizing:auto;color:var(--ink);font-weight:600;letter-spacing:0;line-height:1.18}
-  .fell{font-family:'Newsreader',serif;font-style:italic}
+  h1,h2,h3,.display{font-family:'Piazzolla',serif;font-optical-sizing:auto;color:var(--ink);font-weight:600;letter-spacing:0;line-height:1.18}
+  .fell{font-family:'Piazzolla',serif;font-style:italic}
   a{color:var(--wax)}
   a:focus-visible, summary:focus-visible, .btn:focus-visible, button:focus-visible{outline:2px solid var(--wax);outline-offset:3px;border-radius:3px}
   nav a:focus-visible{outline-color:var(--gold-bright);outline-offset:2px}
   .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
-  .skip-link{position:absolute;left:8px;top:-48px;z-index:60;background:var(--wax);color:#f6ecd4;padding:9px 16px;border-radius:0 0 5px 5px;font-family:'Newsreader',serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:top .15s}
+  .skip-link{position:absolute;left:8px;top:-48px;z-index:60;background:var(--wax);color:#f6ecd4;padding:9px 16px;border-radius:0 0 5px 5px;font-family:'Piazzolla',serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:top .15s}
   .skip-link:focus{top:0}
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{transition:none!important;animation:none!important}}
 
@@ -61,9 +57,9 @@
     box-shadow:0 2px 14px rgba(20,16,10,.28);
   }
   nav .wrap{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:6px;padding:0 20px;height:54px;overflow-x:auto}
-  nav .brand{font-family:'Newsreader',serif;color:var(--gold-bright);font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;margin-right:auto;padding-right:14px}
+  nav .brand{font-family:'Piazzolla',serif;color:var(--gold-bright);font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;margin-right:auto;padding-right:14px}
   nav a{
-    color:#e7dcc0;text-decoration:none;font-family:'Newsreader',serif;font-size:.72rem;
+    color:#e7dcc0;text-decoration:none;font-family:'Piazzolla',serif;font-size:.72rem;
     letter-spacing:.09em;text-transform:uppercase;white-space:nowrap;padding:7px 11px;border-radius:3px;
     transition:color .18s,background .18s
   }
@@ -74,23 +70,40 @@
   .section.narrow{max-width:860px}
   .lede{font-size:1.16rem;color:var(--ink-soft);max-width:56em}
 
-  /* ===== HERO ===== */
+  /* ===== HERO — split: copy left, invitation art right (art-first on mobile) ===== */
   header.hero{
-    position:relative;text-align:center;
-    padding:64px 22px 52px;
+    position:relative;
+    padding:56px 26px 62px;
     background:
       linear-gradient(180deg, rgba(40,36,31,.05), transparent 30%),
       radial-gradient(ellipse 70% 80% at 50% 0%, rgba(179,137,47,.14), transparent 60%);
     border-bottom:1px solid var(--rule);
   }
-  header.hero .kicker{font-family:'Newsreader',serif;letter-spacing:.34em;text-transform:uppercase;font-size:.74rem;color:var(--gold-deep);margin-bottom:24px}
-  header.hero .wordmark{width:min(760px,90vw);height:auto;display:block;margin:0 auto 6px;filter:drop-shadow(0 2px 3px rgba(32,26,18,.16))}
-  header.hero .tag{font-family:'Newsreader',serif;font-style:italic;font-size:1.32rem;color:var(--wax);margin:14px 0 22px}
-  header.hero .intro{max-width:38em;margin:0 auto;font-size:1.12rem;color:var(--ink-body)}
-  .flourish{color:var(--gold);font-size:1.1rem;letter-spacing:.5em;margin:26px 0 4px;user-select:none}
-  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .hero-split{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1.06fr;gap:88px;align-items:start}
+  .hero-art{order:2;margin:0}
+  .hero-art img{
+    display:block;width:100%;height:auto;border-radius:2px;
+    box-shadow:0 14px 34px rgba(32,26,18,.30), 0 3px 10px rgba(32,26,18,.20);
+  }
+  .hero-copy{order:1}
+  header.hero .kicker{font-family:'Piazzolla',serif;letter-spacing:.34em;text-transform:uppercase;font-size:.74rem;color:var(--gold-deep);margin-bottom:20px}
+  header.hero .tag{
+    font-family:'Piazzolla',serif;font-optical-sizing:auto;font-weight:600;
+    font-size:clamp(2.2rem,4.4vw,3.5rem);line-height:1.09;letter-spacing:-.012em;
+    color:var(--ink);margin:0 0 22px;max-width:13em;
+  }
+  header.hero .intro{max-width:30em;font-size:1.06rem;color:var(--ink-body)}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+  @media(max-width:900px){
+    header.hero{padding:38px 22px 48px}
+    .hero-split{grid-template-columns:1fr;gap:34px}
+    .hero-art{order:1}
+    .hero-copy{order:2}
+    header.hero .tag{max-width:none}
+    header.hero .intro{max-width:none}
+  }
   .btn{
-    font-family:'Newsreader',serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+    font-family:'Piazzolla',serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
     padding:13px 24px;border-radius:4px;text-decoration:none;cursor:pointer;border:1.5px solid transparent;
     transition:transform .14s,box-shadow .14s,background .14s
   }
@@ -103,19 +116,19 @@
   .start-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;margin-top:24px;align-items:start}
   .quickstart{display:flex;flex-direction:column;gap:24px}
   .qstep{display:grid;grid-template-columns:auto 1fr;column-gap:15px;row-gap:3px;align-items:start}
-  .qstep .qnum{grid-column:1;grid-row:1 / span 2;display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--wax);color:#f6ecd4;font-family:'Newsreader',serif;font-weight:700;font-size:1.02rem;box-shadow:0 2px 6px rgba(90,30,20,.3)}
+  .qstep .qnum{grid-column:1;grid-row:1 / span 2;display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--wax);color:#f6ecd4;font-family:'Piazzolla',serif;font-weight:700;font-size:1.02rem;box-shadow:0 2px 6px rgba(90,30,20,.3)}
   .qstep h3{grid-column:2;grid-row:1;font-size:1.04rem;color:var(--charcoal);margin-bottom:0}
   .qstep p{grid-column:2;grid-row:2;font-size:.95rem}
-  .example-cap{font-family:'Newsreader',serif;font-style:italic;color:var(--gold-deep);font-size:1rem;margin-bottom:10px}
+  .example-cap{font-family:'Piazzolla',serif;font-style:italic;color:var(--gold-deep);font-size:1rem;margin-bottom:10px}
   .letter.example{margin:0;font-size:.98rem;line-height:1.7;padding:24px 28px}
-  .replynote{margin-top:22px;font-family:'Newsreader',serif;font-style:italic;color:var(--ink-soft);font-size:1.04rem;border-left:3px solid var(--gold);padding:4px 0 4px 16px;max-width:56em}
+  .replynote{margin-top:22px;font-family:'Piazzolla',serif;font-style:italic;color:var(--ink-soft);font-size:1.04rem;border-left:3px solid var(--gold);padding:4px 0 4px 16px;max-width:56em}
   @media(max-width:760px){.start-grid{grid-template-columns:1fr;gap:30px}}
 
   /* ===== SECTION HEADINGS ===== */
   .head{display:flex;align-items:center;gap:20px;margin-bottom:12px}
   .head .seal{width:74px;height:74px;flex:none;filter:drop-shadow(0 3px 5px rgba(60,20,14,.34))}
   .head h2{font-size:1.9rem}
-  .head .sub{font-family:'Newsreader',serif;font-style:italic;color:var(--gold-deep);font-size:1.02rem;margin-top:2px}
+  .head .sub{font-family:'Piazzolla',serif;font-style:italic;color:var(--gold-deep);font-size:1.02rem;margin-top:2px}
   .rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:8px 0 26px}
 
   /* ===== SPIRIT / PRINCIPLE CARDS ===== */
@@ -123,10 +136,10 @@
   .principle{background:var(--parchment-card);border:1px solid var(--rule);border-radius:7px;padding:22px 22px 20px;box-shadow:0 2px 10px var(--shadow)}
   .principle h3{font-size:1.02rem;letter-spacing:.05em;margin-bottom:8px;color:var(--charcoal)}
   .principle p{font-size:.98rem;color:var(--ink-body)}
-  .principle .mark{font-family:'Newsreader';color:var(--gold);font-size:.8rem;letter-spacing:.2em}
+  .principle .mark{font-family:'Piazzolla';color:var(--gold);font-size:.8rem;letter-spacing:.2em}
 
   blockquote.oath{
-    font-family:'Newsreader',serif;font-style:italic;font-size:1.4rem;line-height:1.5;
+    font-family:'Piazzolla',serif;font-style:italic;font-size:1.4rem;line-height:1.5;
     text-align:center;color:var(--charcoal);max-width:24em;margin:40px auto 8px;position:relative;padding:20px 0
   }
   blockquote.oath::before,blockquote.oath::after{content:'';position:absolute;left:50%;transform:translateX(-50%);width:120px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
@@ -135,24 +148,36 @@
   /* ===== RHYTHM ===== */
   .rhythm{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:24px}
   .beat{background:var(--parchment-card);border:1px solid var(--rule);border-radius:7px;padding:24px 22px;box-shadow:0 2px 10px var(--shadow);position:relative;overflow:hidden}
-  .beat .when{font-family:'Newsreader';font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--wax);margin-bottom:9px}
+  .beat .when{font-family:'Piazzolla';font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--wax);margin-bottom:9px}
   .beat h3{font-size:1.16rem;margin-bottom:7px;color:var(--charcoal)}
   .beat p{font-size:.98rem}
-  .beat .num{position:absolute;right:12px;bottom:-10px;font-family:'Newsreader';font-weight:700;font-size:4.2rem;color:rgba(179,137,47,.13);line-height:1}
+  .beat .num{position:absolute;right:12px;bottom:-10px;font-family:'Piazzolla';font-weight:700;font-size:4.2rem;color:rgba(179,137,47,.13);line-height:1}
 
   /* ===== SUSTAIN / SASE HIGHLIGHT ===== */
   .keystone{
     background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='ink'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23ink)' opacity='0.05'/%3E%3C/svg%3E"), linear-gradient(140deg,#302b25,#211d19);color:#f0e7cd;border-radius:9px;
-    padding:34px 34px;margin-top:30px;border:1px solid var(--gold-deep);position:relative;
+    padding:34px 214px 34px 34px;min-height:228px;margin-top:30px;border:1px solid var(--gold-deep);position:relative;overflow:hidden;
     box-shadow:0 6px 22px rgba(20,16,10,.32)
   }
-  .keystone .tagpill{display:inline-block;font-family:'Newsreader';font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:#241f1a;background:var(--gold-bright);padding:4px 12px;border-radius:20px;margin-bottom:14px}
+  .keystone .tagpill{display:inline-block;font-family:'Piazzolla';font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:#241f1a;background:var(--gold-bright);padding:4px 12px;border-radius:20px;margin-bottom:14px}
   .keystone h3{color:#f4ecd4;font-size:1.5rem;margin-bottom:10px}
   .keystone p{color:#e2d7bb;font-size:1.06rem;max-width:40em}
-  .keystone .hl{color:var(--gold-bright);font-style:italic;font-family:'Newsreader',serif}
+  .keystone .hl{color:var(--gold-bright);font-style:italic;font-family:'Piazzolla',serif}
+  .mail-animation{position:absolute;right:38px;top:50%;width:146px;height:132px;transform:translateY(-50%)}
+  .mail-envelope{position:absolute;left:5px;bottom:8px;width:136px;height:82px;background:#ead8ad;border:1px solid #b99752;border-radius:4px;box-shadow:0 8px 16px rgba(12,9,6,.32);z-index:2;overflow:hidden;animation:envelope-receive 4.6s ease-in-out 2 both}
+  .mail-envelope::before{content:'';position:absolute;left:16px;top:28px;width:58px;height:2px;background:rgba(109,84,23,.48);box-shadow:0 10px 0 rgba(109,84,23,.34),0 20px 0 rgba(109,84,23,.24)}
+  .mail-envelope::after{content:'';position:absolute;left:16px;bottom:12px;width:82px;height:1px;background:rgba(109,84,23,.25)}
+  .postage-stamp{position:absolute;left:96px;top:52px;width:31px;height:37px;background:var(--parchment-card);border:3px dotted var(--wax);outline:1px solid rgba(243,233,207,.9);outline-offset:-4px;box-shadow:0 2px 4px rgba(30,12,8,.28);z-index:4;transform:rotate(-2deg);animation:postage-place 4.6s cubic-bezier(.36,.05,.22,1) 2 forwards}
+  .postage-stamp::before{content:'✦';position:absolute;inset:5px 4px 10px;display:grid;place-items:center;background:var(--wax);color:#e8c487;font-family:'Piazzolla',serif;font-size:.72rem;line-height:1}
+  .postage-stamp::after{content:'CCS';position:absolute;left:0;right:0;bottom:4px;text-align:center;font-family:'Piazzolla',serif;font-size:.34rem;font-weight:700;letter-spacing:.08em;color:var(--wax)}
+  .stamp-contact{position:absolute;left:90px;top:47px;width:43px;height:48px;border:1px solid rgba(200,161,58,.48);border-radius:50%;opacity:0;z-index:3;animation:stamp-contact 4.6s ease-in-out 2 both}
+  @keyframes postage-place{0%,12%{opacity:0;transform:translate(19px,-58px) rotate(12deg) scale(1.06);box-shadow:0 10px 14px rgba(30,12,8,.22)}22%{opacity:1}48%,100%{opacity:1;transform:translate(0,0) rotate(-2deg) scale(1);box-shadow:0 1px 2px rgba(30,12,8,.22)}}
+  @keyframes envelope-receive{0%,44%,100%{transform:translateY(0) rotate(0)}49%{transform:translateY(3px) rotate(.5deg)}56%{transform:translateY(-1px) rotate(-.25deg)}}
+  @keyframes stamp-contact{0%,45%,100%{opacity:0;transform:scale(.72)}50%{opacity:.9;transform:scale(1)}64%{opacity:0;transform:scale(1.18)}}
+  @media(max-width:780px){.keystone{padding:34px 34px 160px;min-height:0}.mail-animation{right:50%;top:auto;bottom:14px;transform:translateX(50%)}}
   .sustain-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
   .sustain-list li{list-style:none;background:var(--parchment-card);border-left:3px solid var(--gold);padding:14px 18px;border-radius:0 6px 6px 0;font-size:.98rem;box-shadow:0 1px 6px var(--shadow)}
-  .sustain-list li b{color:var(--charcoal);font-family:'Newsreader';font-size:.82rem;letter-spacing:.04em;display:block;margin-bottom:3px}
+  .sustain-list li b{color:var(--charcoal);font-family:'Piazzolla';font-size:.82rem;letter-spacing:.04em;display:block;margin-bottom:3px}
 
   /* ===== IDEA BANK (accordion) ===== */
   .bank-intro{margin-bottom:8px}
@@ -168,35 +193,36 @@
   }
   details.cat summary::-webkit-details-marker{display:none}
   details.cat summary:hover{background:rgba(179,137,47,.07)}
-  .cat .icn{font-family:'Newsreader',serif;font-size:1.5rem;line-height:1;flex:none;width:34px;text-align:center;color:var(--gold);text-shadow:0 1px 0 rgba(255,255,255,.4)}
+  .cat .icn{display:grid;place-items:center;flex:none;width:38px;height:38px;color:var(--gold-deep);background:rgba(179,137,47,.10);border:1px solid rgba(109,84,23,.35);border-radius:50%;box-shadow:inset 0 0 0 3px rgba(247,240,220,.55)}
+  .cat .icn svg{display:block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
   .cat .cat-t{flex:1}
   .cat .cat-t h3{font-size:1.24rem;color:var(--charcoal)}
-  .cat .cat-t .cap{font-family:'Newsreader',serif;font-style:italic;color:var(--gold-deep);font-size:.96rem}
-  .cat .chev{font-family:'Newsreader';color:var(--gold);font-size:1.1rem;transition:transform .22s;flex:none}
+  .cat .cat-t .cap{font-family:'Piazzolla',serif;font-style:italic;color:var(--gold-deep);font-size:.96rem}
+  .cat .chev{font-family:'Piazzolla';color:var(--gold);font-size:1.1rem;transition:transform .22s;flex:none}
   details.cat[open] .chev{transform:rotate(90deg)}
   .cat-body{padding:2px 26px 26px 74px}
   .cat-body>p.note{font-size:.98rem;color:var(--ink-soft);margin:6px 0 16px;max-width:46em}
   .fmt{margin-bottom:20px}
-  .fmt h4{font-family:'Newsreader';font-size:.95rem;letter-spacing:.03em;color:var(--wax);margin-bottom:5px}
+  .fmt h4{font-family:'Piazzolla';font-size:.95rem;letter-spacing:.03em;color:var(--wax);margin-bottom:5px}
   .fmt p{font-size:.99rem}
   .idea-list{columns:2;column-gap:34px;margin-top:6px}
   .idea-list li{list-style:none;padding:6px 0 6px 20px;position:relative;break-inside:avoid;font-size:1rem}
   .idea-list li::before{content:'\275D';position:absolute;left:0;top:5px;color:var(--gold);font-size:.8rem}
-  .subhead{font-family:'Newsreader';font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--charcoal);margin:20px 0 6px;padding-bottom:5px;border-bottom:1px solid var(--rule)}
-  .wordtrio{display:inline-block;background:rgba(179,137,47,.14);border:1px solid var(--rule);border-radius:4px;padding:2px 9px;margin:3px 5px 3px 0;font-family:'Newsreader';font-size:.82rem;color:var(--gold-deep)}
+  .subhead{font-family:'Piazzolla';font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--charcoal);margin:20px 0 6px;padding-bottom:5px;border-bottom:1px solid var(--rule)}
+  .wordtrio{display:inline-block;background:rgba(179,137,47,.14);border:1px solid var(--rule);border-radius:4px;padding:2px 9px;margin:3px 5px 3px 0;font-family:'Piazzolla';font-size:.82rem;color:var(--gold-deep)}
 
   /* ===== TOUCHES ===== */
   .touches{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:24px}
   .touch{background:var(--parchment-card);border:1px solid var(--rule);border-radius:7px;padding:20px 22px;box-shadow:0 2px 9px var(--shadow)}
   .touch h3{font-size:1.05rem;color:var(--charcoal);margin-bottom:6px;display:flex;align-items:baseline;gap:9px}
-  .touch h3 .g{font-family:'Newsreader';color:var(--gold);font-size:.9rem}
+  .touch h3 .g{font-family:'Piazzolla';color:var(--gold);font-size:.9rem}
   .touch p{font-size:.96rem}
 
   /* ===== FOUND YOUR OWN ===== */
   .found{background:var(--parchment-card);border:1px solid var(--rule);border-radius:9px;padding:32px;margin-top:24px;box-shadow:0 3px 14px var(--shadow)}
   .found h3{color:var(--charcoal);font-size:1.3rem;margin-bottom:8px}
   .namegrid{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 6px}
-  .namechip{font-family:'Newsreader',serif;font-style:italic;font-size:1.06rem;color:var(--charcoal);background:var(--parchment);border:1px solid var(--gold);border-radius:30px;padding:8px 18px;box-shadow:0 1px 4px var(--shadow)}
+  .namechip{font-family:'Piazzolla',serif;font-style:italic;font-size:1.06rem;color:var(--charcoal);background:var(--parchment);border:1px solid var(--gold);border-radius:30px;padding:8px 18px;box-shadow:0 1px 4px var(--shadow)}
   .twocol{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:8px}
   @media(max-width:720px){.twocol{grid-template-columns:1fr}.idea-list{columns:1}}
 
@@ -206,27 +232,27 @@
     background:#fbf6e8;border:1px solid var(--rule);border-radius:8px;padding:34px;margin-top:22px;
     box-shadow:0 3px 16px var(--shadow);position:relative
   }
-  .printable .plabel{position:absolute;top:-13px;left:26px;background:var(--wax);color:#f6ecd4;font-family:'Newsreader';font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;padding:5px 14px;border-radius:20px}
+  .printable .plabel{position:absolute;top:-13px;left:26px;background:var(--wax);color:#f6ecd4;font-family:'Piazzolla';font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;padding:5px 14px;border-radius:20px}
   .letter{
     border:2px double var(--gold);border-radius:6px;padding:30px 34px;background:
       radial-gradient(circle at 12% 8%,rgba(179,137,47,.05),transparent 40%),#fdfaf0;
     font-size:1.06rem;line-height:1.85
   }
   .letter .fill{border-bottom:1.5px dotted var(--wax-soft);color:var(--wax);font-style:italic;padding:0 6px;min-width:60px;display:inline-block}
-  .letter .sig{font-family:'Newsreader',serif;font-style:italic;font-size:1.2rem;color:var(--charcoal);margin-top:20px}
+  .letter .sig{font-family:'Piazzolla',serif;font-style:italic;font-size:1.2rem;color:var(--charcoal);margin-top:20px}
   .cards-sheet{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:6px}
   .memcard{
     border:1.5px solid var(--gold);border-radius:8px;padding:18px;text-align:center;background:
       linear-gradient(135deg,#fdfaf0,#f4e9cd);position:relative;min-height:172px;
       display:flex;flex-direction:column;justify-content:center;gap:5px
   }
-  .memcard .mc-soc{font-family:'Newsreader';font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep)}
-  .memcard .mc-name{font-family:'Newsreader',serif;font-style:italic;font-size:1.1rem;color:var(--wax);border-bottom:1px dotted var(--wax-soft);padding-bottom:5px;margin:4px 30px}
-  .memcard .mc-status{font-family:'Newsreader';font-size:.72rem;letter-spacing:.08em;color:var(--charcoal);margin-top:4px}
+  .memcard .mc-soc{font-family:'Piazzolla';font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep)}
+  .memcard .mc-name{font-family:'Piazzolla',serif;font-style:italic;font-size:1.1rem;color:var(--wax);border-bottom:1px dotted var(--wax-soft);padding-bottom:5px;margin:4px 30px}
+  .memcard .mc-status{font-family:'Piazzolla';font-size:.72rem;letter-spacing:.08em;color:var(--charcoal);margin-top:4px}
   .memcard .mc-seal{width:52px;height:52px;margin:6px auto 0}
   .memcard.blank{border-style:dashed}
-  .mc-soc-fill{font-family:'Newsreader',serif;font-style:italic;font-size:.9rem;color:var(--wax);border-bottom:1px dotted var(--wax-soft);padding-bottom:4px;margin:0 22px 2px}
-  .mc-emblem-blank{width:50px;height:50px;margin:8px auto 0;border:1.5px dashed var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Newsreader',serif;font-size:.46rem;line-height:1.15;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.06em;text-align:center}
+  .mc-soc-fill{font-family:'Piazzolla',serif;font-style:italic;font-size:.9rem;color:var(--wax);border-bottom:1px dotted var(--wax-soft);padding-bottom:4px;margin:0 22px 2px}
+  .mc-emblem-blank{width:50px;height:50px;margin:8px auto 0;border:1.5px dashed var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Piazzolla',serif;font-size:.46rem;line-height:1.15;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.06em;text-align:center}
   .checklist{list-style:none;margin-top:6px}
   .checklist li{padding:9px 0 9px 34px;position:relative;font-size:1.04rem;border-bottom:1px dashed var(--rule)}
   .checklist li::before{content:'';position:absolute;left:0;top:10px;width:18px;height:18px;border:1.5px solid var(--gold);border-radius:3px}
@@ -237,8 +263,8 @@
   /* ===== FOOTER ===== */
   footer{text-align:center;padding:56px 22px 70px;margin-top:60px;border-top:1px solid var(--rule);background:rgba(40,36,31,.05)}
   footer .seal{width:66px;height:66px;margin-bottom:14px;filter:drop-shadow(0 3px 5px rgba(60,20,14,.3))}
-  footer p{font-family:'Newsreader',serif;font-style:italic;color:var(--ink-soft);max-width:32em;margin:0 auto 6px}
-  footer .fine{font-family:'Alegreya Sans';font-style:normal;font-size:.82rem;color:#675e3f;margin-top:18px}
+  footer p{font-family:'Piazzolla',serif;font-style:italic;color:var(--ink-soft);max-width:32em;margin:0 auto 6px}
+  footer .fine{font-family:'Rosario';font-style:normal;font-size:.82rem;color:#675e3f;margin-top:18px}
 
   /* ===== PRINT — "Print the Starter Pack" prints ONLY the 4 printable artifacts ===== */
   @media print{
@@ -257,11 +283,12 @@
     .head .seal{width:56px;height:56px}
     .cat-body{padding-left:26px}
     .cards-sheet{grid-template-columns:1fr}
-    /* Mobile nav: brand + two priority links, no horizontal scroll */
+    /* Mobile nav: brand + three priority links, no horizontal scroll */
     nav .wrap{overflow-x:visible;gap:2px}
     nav .brand{font-size:.72rem;padding-right:8px}
     nav a{display:none}
-    nav a[href="#start"], nav a[href="#bank"], nav a[href="#printables"]{display:inline-block}
+    nav a[href="#start"], nav a[href="#bank"], nav a[href="#printables"]{display:inline-block;font-size:0;padding-left:8px;padding-right:8px}
+    nav a[data-short]::after{content:attr(data-short);font-size:.68rem;letter-spacing:.08em}
   }
 </style>
 </head>
@@ -272,27 +299,28 @@
 <nav aria-label="Field guide sections">
   <div class="wrap">
     <span class="brand">C · C · S</span>
-    <a href="#start">Start</a>
-    <a href="#spirit">Spirit</a>
-    <a href="#rhythm">Rhythm</a>
-    <a href="#sustain">Sustain</a>
-    <a href="#bank">Idea Bank</a>
-    <a href="#touches">Touches</a>
-    <a href="#found">Found Your Own</a>
-    <a href="#printables">Printables</a>
+    <a href="#start" data-short="Start">Start Tonight</a>
+    <a href="#bank" data-short="Ideas">Choose an Idea</a>
+    <a href="#sustain" data-short="Sustain">Make It Last</a>
+    <a href="#found" data-short="Yours">Make It Yours</a>
+    <a href="#printables" data-short="Print">Print the Kit</a>
   </div>
 </nav>
 
 <header class="hero">
-  <h1 class="visually-hidden">Curious Correspondence Society — Start Your Own</h1>
-  <div class="kicker">A Field Guide &amp; Starter Kit</div>
-  <img class="wordmark" src="assets/CCS-wordmark.png" alt="Curious Correspondence Society">
-  <div class="tag">your mailbox, a portal to a small shared world</div>
-  <p class="intro">A playful, low-pressure mail tradition between a grown-up and a young mind they love — a grandparent, aunt or uncle, godparent, mentor, or friend. Stories, questions, small missions, and mailed curiosities. Not homework. An invitation. Here is everything you need to start one of your own.</p>
-  <div class="flourish">✦ ❈ ✦</div>
-  <div class="cta-row">
-    <a class="btn primary" href="#printables">Print the Starter Pack</a>
-    <a class="btn ghost" href="#bank">Browse the Idea Bank</a>
+  <div class="hero-split">
+    <h1 class="hero-art">
+      <img src="assets/invitation.jpg" alt="The Curious Correspondence Society — you are hereby invited">
+    </h1>
+    <div class="hero-copy">
+      <div class="kicker">A Field Guide &amp; Starter Kit</div>
+      <p class="tag">Turn your mailbox into a portal to a small shared world</p>
+      <p class="intro">A playful, low-pressure mail tradition between a grown-up and a young mind they love — a grandparent, aunt or uncle, godparent, mentor, or friend. Stories, questions, small missions, and mailed curiosities. Not homework. An invitation. Here is everything you need to start one of your own.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#printables">Print the Starter Pack</a>
+        <a class="btn ghost" href="#bank">Browse the Idea Bank</a>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -318,7 +346,7 @@
     <div class="example-cap">A sample dispatch</div>
     <div class="letter example">
       <p>Dear <span style="color:var(--wax)">Sam</span>,</p>
-      <p style="margin-top:10px">You are hereby invited to the <span style="color:var(--wax)">Saturday Mission Bureau</span>.</p>
+      <p style="margin-top:10px">You are hereby invited to the <span style="color:var(--wax)">Curious Correspondence Society</span>.</p>
       <p style="margin-top:10px">I saw something strange this week: three shoes by the road, all of them left feet. I have a theory, but I want yours first. <b>Your mission:</b> tell me what happened.</p>
       <p style="margin-top:10px">And one question, just because I am curious: what is a small thing that made your week good?</p>
       <p style="margin-top:10px">Write back any way you like — or don&rsquo;t. This can simply be yours.</p>
@@ -341,15 +369,15 @@
   <p class="lede">The aim is not to give homework. It is to create a small shared world that arrives in the mailbox: stories, questions, mysteries, observations, projects, and kindness missions for young people whose minds are worth taking seriously. Bright children love being trusted with genuine questions, real creative authority, and their own private interior lives.</p>
 
   <div class="principles">
-    <div class="principle"><span class="mark">I.</span><h3>Invitations, not assignments</h3><p>No grades, deadlines, reports, or correct answers. A child may try an idea, change it, tell you about it, mail it back, keep it private, or skip it completely.</p></div>
-    <div class="principle"><span class="mark">II.</span><h3>A reply is optional</h3><p>Not every letter needs an answer. A letter can simply be a gift of attention. Months of quiet on their end never earns a guilt letter.</p></div>
-    <div class="principle"><span class="mark">III.</span><h3>Calibrate up, not down</h3><p>Most children read past their age. A word or question that is a small reach is a gift, not a barrier. They would rather be slightly over-trusted than written down to.</p></div>
-    <div class="principle"><span class="mark">IV.</span><h3>Praise the choice, not the child</h3><p>Name a real decision they made: an unexpected detail, a sharp question, a funny turn of phrase, a brave attempt, a kind act. Specific praise teaches; general praise evaporates.</p></div>
+    <div class="principle"><span class="mark">I.</span><h3>Invitations, not assignments</h3><p>No grades, deadlines, reports, or correct answers. A child may try an idea, change it, tell you about it, mail it back, keep it just for themselves, or skip it completely.</p></div>
+    <div class="principle"><span class="mark">II.</span><h3>A reply is optional</h3><p>Not every letter needs an answer. A letter can simply be a gift of attention.</p></div>
+    <div class="principle"><span class="mark">III.</span><h3>Calibrate up, not down</h3><p>A word or question that is a small reach is a gift, not a barrier. Children rarely appreciate being talked down to.</p></div>
+    <div class="principle"><span class="mark">IV.</span><h3>Notice the choices they make</h3><p>Name a real decision they made: an unexpected detail, a sharp question, a funny turn of phrase, a brave attempt, or a kind act.</p></div>
     <div class="principle"><span class="mark">V.</span><h3>Equitable, not identical</h3><p>With more than one child: the same membership and roughly the same amount of mail — but let their differences show up as <i>different invitations</i>, never as <i>more</i> for anyone. A child notices who gets more mail back.</p></div>
     <div class="principle"><span class="mark">VI.</span><h3>Keep the payload small</h3><p>One or two things per envelope. A single question feels intriguing; a packet feels like a chore. The sealed envelope is the magic, not the volume inside it.</p></div>
   </div>
 
-  <blockquote class="oath">Every mailing should leave them feeling: “Someone thinks I am interesting, capable, and free to be myself.”</blockquote>
+  <blockquote class="oath">Every mailing should leave them feeling they are interesting, capable, and appreciated for who they are.</blockquote>
 </section>
 
 <!-- ============ RHYTHM ============ -->
@@ -386,6 +414,11 @@
     <span class="tagpill">The single highest-leverage habit</span>
     <h3>When you invite a reply, make it effortless.</h3>
     <p>A child writing back has to find an envelope, a stamp, the address, and then get it to a mailbox — small frictions, any one of which can kill the reply. A self-addressed, stamped envelope hands them the first three, so all that is left is to drop it in the slot. It turns <span class="hl">“I might write back”</span> into <span class="hl">“all I have to do is put paper in the slot.”</span> No reply is ever required — but when they want to, nothing should stand in the way.</p>
+    <div class="mail-animation" aria-hidden="true">
+      <span class="mail-envelope"></span>
+      <span class="stamp-contact"></span>
+      <span class="postage-stamp"></span>
+    </div>
   </div>
   <p class="replynote">And however they reply is theirs to choose: they can dictate it to an adult, draw instead of write, send a photo or a voice memo, or ask for larger print. Every one counts.</p>
 
@@ -413,30 +446,41 @@
 
     <!-- Letter formats -->
     <details class="cat" open>
-      <summary><span class="icn" aria-hidden="true">❧</span><div class="cat-t"><h3>Reliable Letter Formats</h3><div class="cap">nine shapes a letter can take</div></div><span class="chev" aria-hidden="true">❯</span></summary>
+      <summary><span class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><div class="cat-t"><h3>Reliable Letter Formats</h3><div class="cap">shapes a letter can take</div></div><span class="chev" aria-hidden="true">❯</span></summary>
       <div class="cat-body">
         <div class="fmt"><h4>The Mystery Envelope</h4><p>Begin: “I saw something strange this week…” Give three clues and invite them to solve what happened.</p></div>
-        <div class="fmt"><h4>Two Truths and a Fib</h4><p>Share three things about your week, your childhood, family history, animals, or travel. They write back guessing which one is invented.</p></div>
+        <div class="fmt"><h4>Two Truths and a Lie</h4><p>Share three things about your week, your childhood, family history, animals, or travel. They write back guessing which one is invented.</p></div>
         <div class="fmt"><h4>Field Notes</h4><p>A short observation: a strange cloud, a funny overheard sentence, a bird, an unexpected kindness, a recipe failure, a tiny beautiful thing.</p></div>
         <div class="fmt"><h4>The Question Letter</h4><p>Ask one excellent question and leave room for their reply. (A bank of questions lives in the next drawer.)</p></div>
         <div class="fmt"><h4>Family History Dispatches</h4><p>Tell one vivid, ordinary story from when you were their age. A small scene beats a polished memoir.</p></div>
-        <div class="fmt"><h4>Photo Dispatches</h4><p>Old family photos are pure fuel. Three questions on the back (Who is this? What year? What was about to happen?); a photo of you at their exact age (“Ask this kid anything”); two photos from different decades (what changed, what stayed?); or a true caption with one small detail invented — they guess the fib.</p></div>
+        <div class="fmt"><h4>Photo Dispatches</h4><p>Old family photos are pure fuel. Three questions on the back (Who is this? What year? What was about to happen?); a photo of you at their exact age (“Ask this kid anything”); two photos from different decades (what changed, what stayed?); or a true caption with one small detail invented — they guess the lie.</p></div>
         <div class="fmt"><h4>Would You Rather, But Smart</h4><p>The “Why?” is the whole point: no right answer, only a reason worth hearing. (A full set lives two drawers down.)</p></div>
         <div class="fmt"><h4>Vocabulary Treasure Hunt</h4><p>Send three delicious words and invite them to use one in the most dramatic sentence possible. Or send one word with its secret history — <i>muscle</i> comes from the Latin for “little mouse,” because a flexing one looked like a mouse under the skin — and ask them to hunt down another’s.</p></div>
         <div class="fmt"><h4>Landscape Missions</h4><p>Use their own surroundings as material: “Next time you see the biggest hill / water tower / oldest tree near you, send me a weather report from its point of view,” or “Invent a secret name for a place you pass every day.” Make the familiar strange and worth noticing.</p></div>
+        <!-- NEW-10: letter-formats -->
+        <div class="fmt"><h4>The Misfiled Evidence</h4><p>Enclose one puzzling scrap — a cropped photo, a copied symbol, a sentence without context — stamped or labeled “Misfiled Evidence.” Ask for their best theory. Reveal the ordinary truth later, or let their theory become the official one.</p></div>
+        <div class="fmt"><h4>The Official Ruling</h4><p>Ask them to settle one consequential nonsense question: where headquarters should be hidden, what the society mascot eats, whether Tuesdays permit capes. Their answer becomes canon in a later dispatch.</p></div>
+        <div class="fmt"><h4>Answer First, Question Later</h4><p>Begin with an answer — “Seven, but only during thunderstorms” — and invite them to invent the question. Send your own question in the next letter, whether or not theirs comes back.</p></div>
+        <div class="fmt"><h4>The Tiny Interview</h4><p>Interview a person, pet, tree, household object, or imaginary witness using exactly three questions. Send the transcript and leave one blank question for them to ask.</p></div>
+        <div class="fmt"><h4>The Correction Notice</h4><p>Confidently explain something you know badly — their favorite game, current slang, how a school day works — and invite an official correction from the expert. Your next letter can publish the amended version.</p></div>
+        <div class="fmt"><h4>The One-Minute Field Report</h4><p>Report from one ordinary place as though it were a remote expedition: the grocery line, back step, bus stop, or laundry room. Include one sighting, one hazard, and one unanswered question.</p></div>
+        <div class="fmt"><h4>The Object With Three Pasts</h4><p>Choose something nearby and give it three possible histories. Which history is true — or which deserves to be? The object can reappear later with its “official” biography attached.</p></div>
+        <div class="fmt"><h4>The Before-and-After Dispatch</h4><p>Write one prediction before doing something small — baking, repairing, traveling, asking a question — then add the result afterward. Leave a line where they may make a prediction of their own.</p></div>
+        <div class="fmt"><h4>The Departmental Memo</h4><p>Write from a newly invented office: the Department of Lost Buttons, Bureau of Unexplained Noises, or Ministry of Excellent Snacks. Give one brief update and request one ruling.</p></div>
+        <div class="fmt"><h4>The Letter That Needs a Title</h4><p>Tell one compact story but leave the title blank. Offer three possible titles or invite one from them. Use the winning title as the subject line of a later dispatch.</p></div>
       </div>
     </details>
 
     <!-- Question bank -->
     <details class="cat">
-      <summary><span class="icn" aria-hidden="true">❖</span><div class="cat-t"><h3>The Question Bank</h3><div class="cap">one excellent question is a whole letter</div></div><span class="chev" aria-hidden="true">❯</span></summary>
+      <summary><span class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 5h14v10H9l-4 4V5z"/><path d="M10 9a2.3 2.3 0 1 1 2.7 2.25V13"/><path d="M12.7 15.5h.01"/></svg></span><div class="cat-t"><h3>The Question Bank</h3><div class="cap">one excellent question is a whole letter</div></div><span class="chev" aria-hidden="true">❯</span></summary>
       <div class="cat-body">
         <ul class="idea-list">
           <li>What is something adults usually misunderstand about kids?</li>
           <li>If you could make one rule the whole world had to follow, what would it be?</li>
           <li>What is a small thing that makes a day good?</li>
           <li>What is something you are better at than you were a year ago?</li>
-          <li>What would you do with a completely free, completely secret afternoon?</li>
+          <li>What would you do with a completely free afternoon that belonged only to you?</li>
           <li>What is the bravest thing a kid your age can do?</li>
           <li>What is a question you wish a grown-up would ask you?</li>
           <li>If you could invent a brand-new feeling, what would it feel like, and when would you have it?</li>
@@ -449,12 +493,26 @@
           <li>What makes a good life?</li>
           <li>What is something you wish you had learned earlier?</li>
         </ul>
+        <!-- NEW-10: question-bank -->
+        <h4 class="subhead">Ten More Questions With Somewhere to Go</h4>
+        <ul class="idea-list">
+          <li>What is something you know how to do that you could teach me?</li>
+          <li>If I could understand one part of your life better, which part should I ask about?</li>
+          <li>What ordinary object from right now belongs in a museum of your life?</li>
+          <li>What is a rule that makes sense in theory but not in real life?</li>
+          <li>When do you feel most like yourself?</li>
+          <li>What is an opinion you have changed your mind about?</li>
+          <li>What is something small you wish happened more often?</li>
+          <li>If this week had a title, what would it be?</li>
+          <li>What would you preserve exactly as it is for one hundred years?</li>
+          <li>What question should I answer honestly in my next letter?</li>
+        </ul>
       </div>
     </details>
 
     <!-- Would you rather -->
     <details class="cat">
-      <summary><span class="icn" aria-hidden="true">☙</span><div class="cat-t"><h3>Would You Rather, But Smart</h3><div class="cap">the reason matters more than the choice</div></div><span class="chev" aria-hidden="true">❯</span></summary>
+      <summary><span class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 20V10M12 10 6 4M12 10l6-6"/><path d="m6 4 1 4M6 4l4 1M18 4l-1 4M18 4l-4 1"/></svg></span><div class="cat-t"><h3>Would You Rather, But Smart</h3><div class="cap">the reason matters more than the choice</div></div><span class="chev" aria-hidden="true">❯</span></summary>
       <div class="cat-body">
         <p class="note">There is no right answer — only a reason worth hearing. Always ask “Why?”</p>
         <ul class="idea-list">
@@ -477,16 +535,30 @@
           <li>Pause time for everyone but you, or rewind ten minutes once a day?</li>
           <li>Have a tiny weather cloud that follows only you and obeys you, or a shadow that does whatever it wants?</li>
         </ul>
+        <!-- NEW-10: would-you-rather -->
+        <h4 class="subhead">Ten More</h4>
+        <ul class="idea-list">
+          <li>Receive one letter from an ancestor you never met, or one letter from a descendant you will never meet?</li>
+          <li>Know the full history of every object you touch, or know where every lost object is?</li>
+          <li>Have a room that rearranges itself to match your mood, or a pocket that always contains the small tool you need?</li>
+          <li>Be excellent at beginning difficult things, or excellent at finishing them?</li>
+          <li>Add one new chapter to any book, or ask one character a question they must answer honestly?</li>
+          <li>Find a hidden door that opens only once, or an ordinary door that opens somewhere new every year?</li>
+          <li>Be given the right answer once a day, or the right question once a day?</li>
+          <li>Spend one perfect day twice, or trade the second day for a completely unknown adventure?</li>
+          <li>Know one small true thing about everyone you meet, or one big true thing about yourself?</li>
+          <li>Send a message to yourself five years ago, or receive one from yourself five years from now?</li>
+        </ul>
       </div>
     </details>
 
     <!-- Missions -->
     <details class="cat">
-      <summary><span class="icn" aria-hidden="true">✦</span><div class="cat-t"><h3>The Mission Bank</h3><div class="cap">kindness, gratitude, independence, invention, noticing</div></div><span class="chev" aria-hidden="true">❯</span></summary>
+      <summary><span class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6 21V4"/><path d="M6 5h11l-2 4 2 4H6z"/></svg></span><div class="cat-t"><h3>The Mission Bank</h3><div class="cap">kindness, gratitude, independence, invention, noticing</div></div><span class="chev" aria-hidden="true">❯</span></summary>
       <div class="cat-body">
         <h4 class="subhead">Kindness Missions</h4>
         <ul class="idea-list">
-          <li>Do one secret helpful thing for a parent, and do not tell them unless they catch you.</li>
+          <li>Do one quiet helpful thing for a parent, and do not mention it unless they catch you.</li>
           <li>Write someone in your house a note that makes their day easier.</li>
           <li>Make a comfort kit for a hard day: tea, a drawing, a joke, a blanket, a playlist.</li>
           <li>Give someone a compliment that is not about how they look.</li>
@@ -540,12 +612,26 @@
           <li>Watch an ant or any small creature for five minutes and narrate its mission.</li>
           <li>Collect one interesting sentence you overhear out in the world.</li>
         </ul>
+        <!-- NEW-10: mission-bank -->
+        <h4 class="subhead">Society Missions — Quick Now, Useful Later</h4>
+        <ul class="idea-list">
+          <li>Choose one ordinary object and give it an official title, rank, and responsibility.</li>
+          <li>Find something that looks like evidence. Draw or photograph it and write what case it might belong to.</li>
+          <li>Invent one new society rule. It may be sensible, ridiculous, or both.</li>
+          <li>Collect three words you hear today and arrange them into the title of a story.</li>
+          <li>Choose a lookout point you pass often. Report one thing that has changed there since your last visit.</li>
+          <li>Make a museum label for something nobody else would think belongs in a museum.</li>
+          <li>Rename today’s weather more accurately: “sock-dampening drizzle,” “false-spring sunshine,” or your own.</li>
+          <li>Design a tiny flag for your current mood using only two colors and one symbol.</li>
+          <li>Pick one mission for me: notice something blue, ask someone a good question, or improve one boring thing. I will report back.</li>
+          <li>Leave a one-sentence instruction for the next member of the society who opens an envelope.</li>
+        </ul>
       </div>
     </details>
 
     <!-- Story starters + writing -->
     <details class="cat">
-      <summary><span class="icn" aria-hidden="true">❦</span><div class="cat-t"><h3>Story Starters &amp; Writing Invitations</h3><div class="cap">one opening line, handed over with no map</div></div><span class="chev" aria-hidden="true">❯</span></summary>
+      <summary><span class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M3 5.5c3-1 6-.5 9 2v12c-3-2.5-6-3-9-2z"/><path d="M21 5.5c-3-1-6-.5-9 2v12c3-2.5 6-3 9-2z"/></svg></span><div class="cat-t"><h3>Story Starters &amp; Writing Invitations</h3><div class="cap">one opening line, handed over with no map</div></div><span class="chev" aria-hidden="true">❯</span></summary>
       <div class="cat-body">
         <h4 class="subhead">Story Starters — they write whatever comes next</h4>
         <ul class="idea-list">
@@ -589,12 +675,26 @@
           <span class="wordtrio">squelch · crinkle · nibble</span>
           <span class="wordtrio">curious · loyal · audacious</span>
         </p>
+        <!-- NEW-10: story-writing -->
+        <h4 class="subhead">Correspondence Starters — Openings That Can Echo Later</h4>
+        <ul class="idea-list">
+          <li>The letter arrived in my own handwriting, dated thirty years from now.</li>
+          <li>Every Tuesday the mailbox contained one blue feather. Today it contained a key.</li>
+          <li>The museum label said the object had been donated by me, but I had never seen it before.</li>
+          <li>We had been told never to answer letters from the moon. I answered anyway.</li>
+          <li>At the bottom of the grocery list, someone had written: “Do not buy the red door.”</li>
+          <li>A new rule appeared at school overnight: no shadows after lunch.</li>
+          <li>The postcard showed our town exactly as it is now, except the library had been replaced by a forest.</li>
+          <li>The map changed whenever nobody was looking. This morning, the X was under the kitchen table.</li>
+          <li>The envelope looked empty until I asked it a question.</li>
+          <li>The key was still warm, and the tag attached to it was addressed to the house instead of anyone who lived there.</li>
+        </ul>
       </div>
     </details>
 
     <!-- Curiosities -->
     <details class="cat">
-      <summary><span class="icn" aria-hidden="true">❈</span><div class="cat-t"><h3>The Cabinet of Curiosities</h3><div class="cap">one small object turns an envelope into a mystery</div></div><span class="chev" aria-hidden="true">❯</span></summary>
+      <summary><span class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="10" cy="10" r="5"/><path d="m14 14 5 5M18 4v3M16.5 5.5h3"/></svg></span><div class="cat-t"><h3>The Cabinet of Curiosities</h3><div class="cap">one small object turns an envelope into a mystery</div></div><span class="chev" aria-hidden="true">❯</span></summary>
       <div class="cat-body">
         <p class="note">Each mailing can carry a single curiosity — a strange fact, an odd artifact, a mysterious scrap. They make a story, drawing, theory, or question from it. A starter shelf:</p>
         <ul class="idea-list">
@@ -621,33 +721,59 @@
           <li>Stickers, washi tape, or a good piece of paper for a return note.</li>
         </ul>
         <p class="note" style="margin-top:14px"><b>A note on mailing:</b> check your local postal rules before sending rigid objects, coins, or plant material — some need extra postage or a padded envelope, and a few things cannot travel by mail at all.</p>
+        <!-- NEW-10: curiosities -->
+        <h4 class="subhead">Paper Curiosities — Flat, Quick, and Easy to Mail</h4>
+        <ul class="idea-list">
+          <li>A paint-color swatch with an invented name — “Last Light,” “Dragon Breath,” “Tuesday at 4:12” — and a note asking where the color was discovered.</li>
+          <li>A copied map fragment with a route that disappears at the edge of the paper.</li>
+          <li>A grocery receipt with one impossible item added: bottled moonlight, replacement thunder, six minutes of extra Tuesday.</li>
+          <li>The silhouette of an unidentified object, drawn at “actual size.”</li>
+          <li>A museum accession tag for a missing artifact: title, date acquired, known danger, current whereabouts unknown.</li>
+          <li>A postage stamp from an imaginary country, with the ruler, animal, or national disaster pictured on it.</li>
+          <li>A short length of ribbon or thread taped to a card and labeled as evidence from an expedition.</li>
+          <li>A tiny weather chart forecasting something impossible later in the week.</li>
+          <li>A library checkout card listing three invented books and the mysterious people who borrowed them.</li>
+          <li>Step four from an instruction manual, with no explanation of the machine or what happened in steps one through three.</li>
+        </ul>
       </div>
     </details>
 
     <!-- Big recurring ideas -->
     <details class="cat">
-      <summary><span class="icn" aria-hidden="true">⁂</span><div class="cat-t"><h3>Big Recurring Society Ideas</h3><div class="cap">the ongoing threads that build a world over time</div></div><span class="chev" aria-hidden="true">❯</span></summary>
+      <summary><span class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m9 15-2 2a3 3 0 0 1-4-4l3-3a3 3 0 0 1 4 0"/><path d="m15 9 2-2a3 3 0 0 1 4 4l-3 3a3 3 0 0 1-4 0"/><path d="m8 12 8 0"/></svg></span><div class="cat-t"><h3>Big Recurring Society Ideas</h3><div class="cap">the ongoing threads that build a world over time</div></div><span class="chev" aria-hidden="true">❯</span></summary>
       <div class="cat-body">
         <div class="fmt"><h4>The Traveling Object</h4><p>Choose a small harmless object that moves between you — a brass key, a tiny notebook, a plastic dinosaur. Whoever has it adds one page to its story before mailing it on. Over time it grows its own mythology.</p></div>
         <div class="fmt"><h4>The Family Archive</h4><p>Assignments that preserve ordinary life: interview an adult about a childhood memory; draw a map of the house from memory; record current favorites (book, joke, fear, ambition, snack); write down a phrase your family always says.</p></div>
         <div class="fmt"><h4>The Writers’ Room</h4><p>Hand them creative authority: “I am stuck. Should the locked door open, should the cat speak, or should the map begin changing?” Let their answer direct the next installment.</p></div>
         <div class="fmt"><h4>The Map of an Imaginary Place</h4><p>Start a shared map. They add a place, name it, and write what happens there; you add the next location when it comes back. Eventually you have a whole world built by mail.</p></div>
         <div class="fmt"><h4>The Two-Envelope Choice</h4><p>Tuck two sealed envelopes inside: “Open this if you want an adventure” and “Open this if you want a mystery.” Choice gives them a little sovereignty and makes arrival an occasion.</p></div>
-        <div class="fmt"><h4>The Society Cipher</h4><p>Teach one simple code across the first few letters — a shifted alphabet, a symbol key. Once they know it, later mailings can hide a message only members can read. It compounds.</p></div>
+        <div class="fmt"><h4>The Society Cipher</h4><p>Teach one simple code across the first few letters — a shifted alphabet, a symbol key. Once they know it, later mailings can carry coded clues and messages. It compounds.</p></div>
         <div class="fmt"><h4>Missions for You</h4><p>Let them assign <i>you</i> a mission, or hand you a hard question, and report back honestly. Nothing says “I take you seriously” louder than being on the receiving end of their instructions.</p></div>
         <div class="fmt"><h4>Collaboration Without Pressure</h4><p>A round-robin story mailed paragraph by paragraph; a society newspaper that swaps the reporter and illustrator each issue; a field guide where one draws and another names. Keep roles interchangeable so no one is trapped.</p></div>
+        <!-- NEW-10: recurring-ideas -->
+        <h4 class="subhead">Ten Lightweight Threads</h4>
+        <div class="fmt"><h4>The Society Mascot</h4><p>Draw one tiny unexplained creature in the margin. If they name it, use the name; if they do not, let it keep appearing. Give it one new possession, opinion, or problem each time.</p></div>
+        <div class="fmt"><h4>The Question Relay</h4><p>Offer three questions and let them choose which one you must answer next. Answer it honestly in the following dispatch, then offer three more. If no choice comes back, pick one yourself and keep the relay alive.</p></div>
+        <div class="fmt"><h4>The Incorrect Encyclopedia</h4><p>Each mailing defines one ordinary thing completely incorrectly. Invite amendments, illustrations, or new entries. Collect the best on a single folded “encyclopedia” sheet that grows over time.</p></div>
+        <div class="fmt"><h4>The Museum of Ordinary Things</h4><p>Choose one overlooked object per letter and give it a title, label, and reason it matters. Their objects can join yours, but the museum grows whether or not anything returns.</p></div>
+        <div class="fmt"><h4>The Book of Official Rulings</h4><p>Ask one small world-building question in each envelope and record the answer as a formal decree: headquarters, uniforms, feast days, mascot behavior. When no answer returns, mark the matter “still under debate.”</p></div>
+        <div class="fmt"><h4>The Lost-and-Found Bureau</h4><p>Report one peculiar lost item at a time — a Tuesday, somebody’s nerve, the left half of a joke. They may identify the owner or invent how it was lost; your next notice can announce what became of it.</p></div>
+        <div class="fmt"><h4>The Pocket Almanac</h4><p>Record one tiny fact about the current month in every dispatch: first firefly, latest sunset, repeated family meal, strange local sign. At year’s end, copy the twelve entries onto one keepsake page.</p></div>
+        <div class="fmt"><h4>The Family Phrasebook</h4><p>Collect expressions your family actually uses, one per letter, with a definition and example. Invite corrections or additions. Over time it becomes a dictionary nobody outside the family could have written.</p></div>
+        <div class="fmt"><h4>The Object Passport</h4><p>Give one small flat object — a paper key, card, bookmark, or drawing — a passport. Each place it visits earns a date, stamp, sentence, or doodle before it travels again or settles permanently.</p></div>
+        <div class="fmt"><h4>The Three-Envelope Case</h4><p>Limit a mystery on purpose: envelope one contains the event, envelope two adds one witness and one contradiction, envelope three closes the file using their theory, yours, or both. Then begin a completely different case.</p></div>
       </div>
     </details>
 
     <!-- Birthday -->
     <details class="cat">
-      <summary><span class="icn" aria-hidden="true">✶</span><div class="cat-t"><h3>Birthday Dispatches</h3><div class="cap">the society’s high holy day for that member</div></div><span class="chev" aria-hidden="true">❯</span></summary>
+      <summary><span class="icn" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 9h16v11H4zM3 6h18v4H3zM12 6v14"/><path d="M12 6c-1-4-6-4-6-1 0 2 3 1 6 1ZM12 6c1-4 6-4 6-1 0 2-3 1-6 1Z"/></svg></span><div class="cat-t"><h3>Birthday Dispatches</h3><div class="cap">the one day the society is entirely about them</div></div><span class="chev" aria-hidden="true">❯</span></summary>
       <div class="cat-body">
         <p class="note">Keep each birthday the same kind of special, whatever the age. Pull one or two of these — never all at once.</p>
         <ul class="idea-list">
           <li><b>The year you were born.</b> One true, strange, wonderful thing about the world or the family the year they arrived. Pairs well with a real headline or the number-one song from their birth date.</li>
           <li><b>The origin story.</b> The small, vivid scene of the day they were born, or the day you first met them. One moment, not a memoir.</li>
-          <li><b>Baby two truths and a fib.</b> Three stories from when they were tiny, one invented. They guess.</li>
+          <li><b>Baby two truths and a lie.</b> Three stories from when they were tiny, one invented. They guess.</li>
           <li><b>The birthday map.</b> A little illustrated map of their birthplace with a star on the spot: “here is where you began.”</li>
           <li><b>The sky the night you were born.</b> A star chart of the real sky on their birth date (free tools like Stellarium reproduce it from date and place). The moon phase is the most personal touch.</li>
           <li><b>The birthday privilege.</b> On their day, the birthday member may assign you a mission or hand you a hard question — their one royal command of the year.</li>
@@ -655,6 +781,20 @@
           <li><b>N for N.</b> For turning ten, ten of something — ten wonders, ten dares, or ten questions for the next ten years. It scales with the age.</li>
           <li><b>The decade specimen.</b> A fill-in “specimen form” that preserves who they are right now: favorite everything, a prediction for the world, a self-portrait, one mystery they want solved before they are twenty.</li>
           <li><b>The Golden Record.</b> After NASA’s Voyager record: if they had to explain themselves and their world to someone far away, what ten sounds, pictures, or messages would they send?</li>
+        </ul>
+        <!-- NEW-10: birthday-dispatches -->
+        <h4 class="subhead">Ten More Birthday Dispatches</h4>
+        <ul class="idea-list">
+          <li><b>The annual five questions.</b> Ask the same five short questions every birthday — current obsession, best joke, hardest thing, proudest moment, prediction for next year — and keep the answers together.</li>
+          <li><b>The birthday newspaper.</b> Make a one-page front page where their new age is the headline, with a weather report, one interview quote, and a tiny classified ad for something they love.</li>
+          <li><b>The year in evidence.</b> Name five specific things you noticed about them this year: a choice, a kindness, a skill, a phrase, and a way they changed. Concrete evidence beats a list of adjectives.</li>
+          <li><b>A letter from next birthday.</b> Write from exactly one year in the future describing one funny or hopeful thing that has supposedly happened. Leave the future loose enough for them to contradict it.</li>
+          <li><b>The birthday amendment.</b> Once a year, the birthday member may add, retire, or rewrite one official rule of the society.</li>
+          <li><b>When I was this age.</b> Tell one vivid, unpolished scene from when you were their exact age, then ask what would surprise that younger version of you about them.</li>
+          <li><b>Three bets on the year ahead.</b> Make three playful predictions, invite three of theirs, seal the page, and reopen it next birthday without keeping score too seriously.</li>
+          <li><b>The object of the year.</b> Choose one ordinary object that represents their year and write its museum label: what it witnessed, why it mattered, and what future visitors might misunderstand.</li>
+          <li><b>The birthday expedition pass.</b> Offer a choice of three small outings or rituals to do together later. The dispatch itself is the ticket they redeem.</li>
+          <li><b>The question that grows up with them.</b> Choose one question worth answering every year — “What feels important now?” or “What do you want more courage for?” — and return the earlier answers alongside the new blank page.</li>
         </ul>
       </div>
     </details>
@@ -677,7 +817,6 @@
     <div class="touch"><h3><span class="g" aria-hidden="true">‥</span> The unfinished P.S.</h3><p>End some letters on a hook: “P.S. Remind me to tell you about the locked drawer.” A little pull toward the next envelope.</p></div>
     <div class="touch"><h3><span class="g" aria-hidden="true">✶</span> The society seal</h3><p>A consistent stamp, sticker, or wax mark on every envelope, so a mailing is recognizable before it is even opened.</p></div>
     <div class="touch"><h3><span class="g" aria-hidden="true">✦</span> A belonging token</h3><p>A membership card in the very first envelope — their name, the words <i>Member for Life</i>, the seal. It makes the world real on day one.</p></div>
-    <div class="touch"><h3><span class="g" aria-hidden="true">↻</span> Choose your own amount</h3><p>A footer for any mission: <i>Try it · Change it · Tell me about it · Send a picture · Mail it · Keep it private · Skip it.</i> Participation is always theirs to set.</p></div>
   </div>
 </section>
 
@@ -698,7 +837,6 @@
       <h3>Name it</h3>
       <p>Name it after your family, your town, a shared joke, or nothing at all. A few to spark yours:</p>
       <div class="namegrid">
-        <span class="namechip">The Saturday Mission Bureau</span>
         <span class="namechip">The Secret Ink Club</span>
         <span class="namechip">The League of Bright Sparks</span>
         <span class="namechip">The Dispatch</span>
@@ -737,16 +875,14 @@
   <div class="printable">
     <span class="plabel">Printable · The Welcome Letter</span>
     <div class="letter">
-      <p style="text-align:center;font-family:'Newsreader';font-size:.8rem;letter-spacing:.14em;color:var(--gold-deep);margin-bottom:18px">◆ ❈ ◆</p>
+      <p style="text-align:center;font-family:'Piazzolla';font-size:.8rem;letter-spacing:.14em;color:var(--gold-deep);margin-bottom:18px">◆ ❈ ◆</p>
       <p>Dear <span class="fill">&nbsp;name&nbsp;</span>,</p>
       <p style="margin-top:12px">You are hereby invited to the <span class="fill">&nbsp;your society’s name&nbsp;</span>.</p>
       <p style="margin-top:12px">Every so often I will send you some curious piece of correspondence (that’s a fancy word for mail) — maybe a little mission, a funny question or joke, or even just an idea to think or write about.</p>
-      <p style="margin-top:12px">If you make something you like, you can mail it back to me, or send me a picture of it, or tell me about it, or keep it for yourself. Hopefully you will make or notice something interesting.</p>
+      <p style="margin-top:12px">If you make something you like, you can mail it back to me, send me a picture of it, tell me about it, or keep it just for yourself.</p>
+      <p style="margin-top:12px">Your first mystery is enclosed. You may solve it, change it, send something back, or simply keep it. There is no wrong way to be a member.</p>
       <p style="margin-top:12px"><span class="fill">&nbsp;a warm closing line, e.g. &ldquo;I love you and miss you&rdquo;&nbsp;</span></p>
       <p class="sig">— <span class="fill">&nbsp;your name&nbsp;</span></p>
-      <p style="margin-top:18px;font-size:.9rem;color:var(--ink-soft);border-top:1px dotted var(--rule);padding-top:12px">
-        <b style="font-family:'Newsreader';font-size:.72rem;letter-spacing:.08em;color:var(--wax)">CHOOSE YOUR OWN AMOUNT OF PARTICIPATION:</b><br>
-        Try it · Change it · Tell me about it · Send a picture · Mail it · Keep it private · Skip it.</p>
     </div>
   </div>
 
@@ -765,12 +901,12 @@
   <!-- Founder's checklist -->
   <div class="printable">
     <span class="plabel">Printable · The Founder’s Checklist</span>
-    <p style="margin-bottom:6px;font-family:'Newsreader';color:var(--charcoal);font-size:1.05rem;letter-spacing:.03em">What goes in the very first envelope</p>
+    <p style="margin-bottom:6px;font-family:'Piazzolla';color:var(--charcoal);font-size:1.05rem;letter-spacing:.03em">What goes in the very first envelope</p>
     <ul class="checklist">
       <li><b>The welcome letter</b> — the invitation, filled in and signed.</li>
       <li><b>A membership card</b> — their name, and the seal.</li>
       <li><b>One small thing to do</b> — a single question, a would-you-rather, or a tiny mission. Just one.</li>
-      <li><b>A self-addressed, stamped envelope</b> — if you would like a reply, this removes every excuse not to send one. Optional, but powerful.</li>
+      <li><b>A self-addressed, stamped envelope</b> — if you would like a reply, this removes the logistics of replying. Optional, but powerful.</li>
       <li><b>Your mark</b> — a wax seal, sticker, or stamp on the outside, so they know it is from the society before they open it.</li>
     </ul>
     <p style="margin-top:16px;font-size:.96rem;color:var(--ink-soft)"><b style="color:var(--wax)">Then:</b> number it “Dispatch No. 1,” drop it in the mail, and let the world begin. Keep the payload small — the sealed envelope is the magic, not the volume inside it.</p>
